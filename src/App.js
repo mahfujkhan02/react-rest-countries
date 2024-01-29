@@ -24,6 +24,24 @@ function LoadCuntries(){
     <div>
       <h1>Visiting Every countries of the world !!!!</h1>
       <h2>Available Countries : {countries.length}</h2>
+
+      {/* maping krta hbee */}
+
+      {
+        countries.map(country => <Country name ={country.name.common}></Country>)
+      }
+
+
+    </div>
+  )
+}
+
+
+function Country(props){
+  return (
+    <div>
+      <h2>Country : {props.name}</h2>
+
     </div>
   )
 }
