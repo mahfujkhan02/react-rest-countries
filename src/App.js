@@ -28,7 +28,7 @@ function LoadCuntries(){
       {/* maping krta hbee */}
 
       {
-        countries.map(country => <Country name ={country.name.common}></Country>)
+        countries.map(country => <Country name ={country.name.common} population ={country.population}></Country>)
       }
 
 
@@ -39,8 +39,9 @@ function LoadCuntries(){
 
 function Country(props){
   return (
-    <div>
+    <div className='country'>
       <h2>Country : {props.name}</h2>
+      <p>Population :{props.population} </p>
 
     </div>
   )
